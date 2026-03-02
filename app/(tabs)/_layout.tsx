@@ -50,7 +50,7 @@ const TabBar = ({ state, navigation }: any) => {
       >
         <TouchableOpacity
           onPress={() => handleNav("project")}
-          className="flex-row items-center bg-indigo-500 px-5 py-3 rounded-full mb-3 shadow-lg"
+          className="flex-row items-center bg-orange-500 px-5 py-3 rounded-full mb-3 shadow-lg"
         >
           <Ionicons name="briefcase" size={22} color="#fff" />
           <Text className="text-white ml-3 text-base font-semibold">
@@ -60,7 +60,7 @@ const TabBar = ({ state, navigation }: any) => {
 
         <TouchableOpacity
           onPress={() => handleNav("education")}
-          className="flex-row items-center bg-indigo-500 px-5 py-3 rounded-full mb-3 shadow-lg"
+          className="flex-row items-center bg-orange-500 px-5 py-3 rounded-full mb-3 shadow-lg"
         >
           <Ionicons name="school" size={22} color="#fff" />
           <Text className="text-white ml-3 text-base font-semibold">
@@ -70,7 +70,7 @@ const TabBar = ({ state, navigation }: any) => {
 
         <TouchableOpacity
           onPress={() => handleNav("contact")}
-          className="flex-row items-center bg-indigo-500 px-5 py-3 rounded-full shadow-lg"
+          className="flex-row items-center bg-orange-500 px-5 py-3 rounded-full shadow-lg"
         >
           <Ionicons name="person" size={22} color="#fff" />
           <Text className="text-white ml-3 text-base font-semibold">
@@ -86,13 +86,13 @@ const TabBar = ({ state, navigation }: any) => {
           <TouchableOpacity
             onPress={() => handleNav("index")}
             className={`flex-row items-center px-4 py-2 rounded-full ${
-              isActive("index") ? "bg-indigo-500" : ""
+              isActive("index") ? "bg-orange-500" : ""
             }`}
           >
             <Ionicons
               name="home"
               size={26}
-              color={isActive("index") ? "#fff" : "#6366f1"}
+              color={isActive("index") ? "#fff" : "#f97316"}
             />
             {isActive("index") && (
               <Text className="text-white ml-2 text-base font-semibold">
@@ -105,13 +105,13 @@ const TabBar = ({ state, navigation }: any) => {
           <TouchableOpacity
             onPress={() => handleNav("about")}
             className={`flex-row items-center px-4 py-2 rounded-full ${
-              isActive("about") ? "bg-indigo-500" : ""
+              isActive("about") ? "bg-orange-500" : ""
             }`}
           >
             <Ionicons
               name="information-circle"
               size={26}
-              color={isActive("about") ? "#fff" : "#6366f1"}
+              color={isActive("about") ? "#fff" : "#f97316"}
             />
             {isActive("about") && (
               <Text className="text-white ml-2 text-base font-semibold">
@@ -133,7 +133,7 @@ const TabBar = ({ state, navigation }: any) => {
         >
           <Animated.View
             style={fabStyle}
-            className="bg-indigo-500 p-5 rounded-full shadow-xl"
+            className="bg-orange-500 p-5 rounded-full shadow-xl"
           >
             <Ionicons name="add" size={28} color="#fff" />
           </Animated.View>
